@@ -1,12 +1,12 @@
 import QtQuick 2.4
 import QtQuick.Layouts 1.1
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3
-import Ubuntu.Content 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3
+import Lomiri.Content 1.3
 import ubtd 1.0
 
 MainView {
-    applicationName: "ubtd.fourloop2002"
+    applicationName: "ubtd-20.04.fourloop2002"
 
 
     width: units.gu(100)
