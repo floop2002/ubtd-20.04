@@ -1,13 +1,13 @@
 import QtQuick 2.4
 import QtQuick.Layouts 1.1
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtBluetooth 5.4
 import Shareplugin 0.1
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 
 MainView {
     id: root
-    applicationName: "ubtd.mzanetti"
+    applicationName: "ubtd-20.04.fourloop2002"
 
     width: units.gu(100)
     height: units.gu(75)
@@ -100,7 +100,7 @@ MainView {
                 id: progressElement
                 width: parent.width / 3
                 height: parent.height
-                color: UbuntuColors.blue
+                color: LomiriColors.blue
             }
             property int targetX: page.width - progressElement.width
             onTargetXChanged: {
@@ -147,10 +147,10 @@ MainView {
                             Layout.fillHeight: true
                             Layout.fillWidth: true
 
-                            UbuntuShape {
+                            LomiriShape {
                                 anchors.fill: parent
                                 anchors.margins: units.gu(2)
-                                aspect: UbuntuShape.DropShadow
+                                aspect: LomiriShape.DropShadow
                                 sourceFillMode: Image.PreserveAspectCrop
                                 source: Image {
                                     id: transferredImage
@@ -205,7 +205,7 @@ MainView {
                                 anchors.centerIn: parent
                                 color: "white"
                                 border.width: units.dp(2)
-                                border.color: UbuntuColors.blue
+                                border.color: LomiriColors.blue
                                 radius: width / 2
                                 height: units.gu(8)
                                 width: height
@@ -233,7 +233,7 @@ MainView {
                                     width: units.gu(6)
                                     height: width
                                     name: parent.isDone ? "tick" : "close"
-                                    color: parent.isDone ? UbuntuColors.green : UbuntuColors.red
+                                    color: parent.isDone ? LomiriColors.green : LomiriColors.red
                                     visible: parent.isDone || parent.isError
                                 }
                             }
@@ -291,7 +291,7 @@ MainView {
                     Button {
                         Layout.fillWidth: true
                         text: i18n.tr("Close")
-                        color: transfer.error ? UbuntuColors.red : UbuntuColors.green
+                        color: transfer.error ? LomiriColors.red : LomiriColors.green
                         onClicked: Qt.quit();
                         visible: transfer.finished || transfer.error
                     }
