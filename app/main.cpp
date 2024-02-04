@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
-    app.setApplicationName("ubtd.mzanetti");
+    app.setApplicationName("ubtd-20.04.fourloop2002");
 
     Adapter adapter;
 //    BluezClient client;
